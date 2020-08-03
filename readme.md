@@ -41,5 +41,32 @@ public void butclick(View view){
 2. void: doesn't return anything
 3. butclick: function name, which was the name assigned to the onClick functionality of the button for converting euro amount to inr
 4. View view is required to be imported and it has been already
-5. EditText EuroAmounts(the id that was used for amount), this should be equal to the function named findViewById which helps to find out the "view" by using "id".. This function would return the view and in order to do that we do findViewById(R.id.EuroAmount)
+5. EditText EuroAmounts(the variable), this should be equal to the function named findViewById which returns a view.. This function would return the view and in order to do that we do findViewById(R.id.EuroAmount)
 6. EuroAmount is (the id that was used for amount)
+EditText EuroAmounts=findViewById(R.id.EuroAmount);
+findViewById returns view
+and we need to convert that to EditText because EuroAmounts is a EditText variable
+7. EuroAmounts.getText().toString()
+getting the text and converting it to a string and then saving it to a string variable called euros
+8. Double.parseDouble(euros)
+this function called parseDouble accepts a string
+Double.parseDouble(euros) gets that converted to double
+9. in order to give the result to the user of
+Double doubleInr=88.27 * doubleEuros;
+we do
+Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
+We create a string
+String toastText="="+doubleInr.toString() + "Euros";
+
+now we convert to 
+Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
+this action displays the contents of the variable named toastText
+10. double to 2 placed string(probably)
+```java
+String toastText="="+String.format("%.2f", doubleInr) + "Euros";
+```
+The below code is without two place conversion
+```java
+String toastText="="+doubleInr.toString() + "Euros";
+```
