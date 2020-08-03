@@ -1,5 +1,6 @@
 package com.anindamaulik.maulikconvertscurrency;
 
+import android.icu.math.BigDecimal;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -15,6 +16,8 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.math.RoundingMode;
+
 public class MainActivity extends AppCompatActivity {
 
     public void butclick(View view){
@@ -22,9 +25,13 @@ public class MainActivity extends AppCompatActivity {
         String euros= EuroAmounts.getText().toString();
         Double doubleEuros= Double.parseDouble(euros);
         Double doubleInr=88.27 * doubleEuros;
-        String toastText="="+doubleInr.toString() + "Euros";
+
+        String toastText="="+String.format("%.2f", doubleInr) + "Euros";
+//        String toastText="="+doubleInr.toString() + "Euros";
 
         Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
+
+
     }
 
     @Override
