@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/EuroAmount"
         android:layout_width="187dp"
         android:layout_height="54dp"
         android:layout_marginTop="80dp"
@@ -34,11 +34,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:onClick="butclick"
         android:text="Get inr Amount"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/EuroAmount"
+        app:layout_constraintTop_toBottomOf="@+id/EuroAmount" />
 
     <ImageView
         android:id="@+id/imageView"

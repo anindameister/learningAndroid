@@ -12,8 +12,20 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    public void butclick(View view){
+        EditText EuroAmount=(EditText) findViewById(R.id.EuroAmount);
+        String euros= EuroAmount.getText().toString();
+        Double doubleEuros= Double.parseDouble(euros);
+        Double doubleInr=88.27 * doubleEuros;
+        String toastText="="+doubleInr.toString() + "Euros";
+
+        Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
