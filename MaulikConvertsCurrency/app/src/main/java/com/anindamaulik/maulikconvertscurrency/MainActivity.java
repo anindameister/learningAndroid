@@ -18,8 +18,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     public void butclick(View view){
-        EditText EuroAmount=(EditText) findViewById(R.id.EuroAmount);
-        String euros= EuroAmount.getText().toString();
+        EditText EuroAmounts=(EditText) findViewById(R.id.EuroAmount);
+        String euros= EuroAmounts.getText().toString();
         Double doubleEuros= Double.parseDouble(euros);
         Double doubleInr=88.27 * doubleEuros;
         String toastText="="+doubleInr.toString() + "Euros";
