@@ -85,16 +85,16 @@ now we remove AppCompatActivity and make it just Activity, this throws an error 
 
 1. downloading android studio
 2. creating a project
-a. application
-b. company domain
-c. package name should be taken care of
+- application
+- company domain
+- package name should be taken care of
 3. after creating the project
-a. java
-b. res
-c. AndroidManifest
+-  java
+-  res
+-  AndroidManifest
 4. Work
 a. java- we write the code under MainActivity.java
-i. in regular java, for execution it searches for main method and then executes the main method
-ii. in android, for execution it goes to MainActivity and searches for onCreate method
+-  in regular java, for execution it searches for main method and then executes the main method
+-  in android, for execution it goes to MainActivity and searches for onCreate method
 b. we design under activity_main.xml
 c. For giving permission, eg:memory card, internet, camera access
