@@ -1,0 +1,2 @@
+rootProject.name='InternshipEdge'
+include ':app'
