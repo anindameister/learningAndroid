@@ -397,3 +397,18 @@ corresponding code for fragment_first.xml
 - or else we won't get the stuff while we'd attempt to create the virtual device
 
 #### video 2 end
+
+## video 3
+
+#### activity and intent
+
+![activity and intent](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/11.PNG)
+
+– onCreate() , এক্টিভিটি ( Activity ) ক্রিয়েট হতেই এই মেথড কল হয়।
+– onStart() , যখন এক্টিভিটি ( Activity ) ইউজারের কাছে ভিজিবল।
+– onResume() , যখন ইউজার অ্যাপ্লিকেশনের সাথে ইন্টারেকশন শুরু করে।
+– onPause() , যদি এক্টিভিটি ( Activity ) পজ করার দরকার হয়।
+– onStop(), যখন এক্টিভিটি ( Activity )  ইনভিজিবল করা হয়।
+– onDestroy() , ঠিক এক্টিভিটি ( Activity )  ডেস্ট্রয় করার আগের মুহুর্তে এটা কল হয়।
+– onRestart() , যখন এক্টিভিটি ( Activity )  স্টপ হওয়ার পর আবার স্ট্যার্ট করতে হয় তখন এই মেথড কল হবে।
+
