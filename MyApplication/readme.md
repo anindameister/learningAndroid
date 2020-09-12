@@ -93,8 +93,8 @@ now we remove AppCompatActivity and make it just Activity, this throws an error 
 -  res
 -  AndroidManifest
 4. Work
--- java- we write the code under MainActivity.java
+ - java- we write the code under MainActivity.java
 -  in regular java, for execution it searches for main method and then executes the main method
 -  in android, for execution it goes to MainActivity and searches for onCreate method
--- we design under activity_main.xml
--- For giving permission, eg:memory card, internet, camera access
+ - we design under activity_main.xml
+ - For giving permission, eg:memory card, internet, camera access
