@@ -506,4 +506,4 @@ Note: couldn't find that in the code and hence got it from the design, found it 
 
 - a little confusion before 4:22
 
-- to get the button clicked we need the method onClickListeners()
+- to get the button clicked we need the method setOnClickListener()
