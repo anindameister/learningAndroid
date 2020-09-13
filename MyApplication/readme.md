@@ -511,6 +511,8 @@ Note: couldn't find that in the code and hence got it from the design, found it 
 
 # Poulomi Supervision
 
+![Poulomi Supervision](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/13.PNG)
+
 1. Choose Empty Activity: because later development can be in accordance to my choice
 
 2. choose API 25, yes only 66+% is available to use my app but it's fine it seems for now; maybe later I can experiment with my phone called Coolpad
