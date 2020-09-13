@@ -584,3 +584,29 @@ public class MainActivity extends AppCompatActivity {
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+![output](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/14.PNG)
+
+### intent
+
+- data passing
+- going from one activity to another
+- creating the "another" activity
+
+![creating the "another" activity](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/17.PNG)
+
+- a corresponding activity_second.xml is also created for SecondActivity.java
+
+![activity_second.xml](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/16.PNG)
+
+- Intent i=new Intent(MainActivity.this, MainActivity2.class);
+
+- with the above we are trying to get an object 'i' associated to the pre-defined class Intent
+
+- the next step is to import that predefined class namely Intent
+
+- we mention the starting point and ending point as parameters for the Intent class
+
+- intent can also take data from one activity to the other activity
+
+#### video 3 end
