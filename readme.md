@@ -609,4 +609,129 @@ public class MainActivity extends AppCompatActivity {
 
 - intent can also take data from one activity to the other activity
 
+#### final code before the end of video 3
+
+```
+package com.anindamaulik.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button b;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        b=(Button) findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Button to go to the next page", Toast.LENGTH_LONG).show();
+
+                Intent i=new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(i);
+
+
+            }
+        });
+    }
+}
+```
+
 #### video 3 end
+
+## video 4
+
+#### xml
+
+###### The Difference Between XML and HTML
+- XML and HTML were designed with different goals:
+
+1. XML was designed to carry data - with focus on what data is
+2. HTML was designed to display data - with focus on how data looks
+3. XML tags are not predefined like HTML tags are
+
+### linear layout
+
+-absolute basics without any editing
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</LinearLayout>
+
+```
+
+- extensive markup language
+- created to carry data
+- button tag, list view tag, progress bar tag, text view tag, edit text tag(to accept text)
+- just delete the first part Eg: androidx.constraintlayout.widget.ConstraintLayout and replace it by LinearLayout
+- the above would change the complete thing, including the ending part and give me an error free xml code
+- help from: https://www.youtube.com/watch?v=BWUWJEaI0aE
+- android:orientation="horizontal"
+
+![horizontal](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/18.PNG)
+
+- android:orientation="vertical"
+
+![vertical](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/19.PNG)
+
+#### text view
+
+- default show or default parameters
+
+![text view intro](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/20.PNG)
+
+- wrap content:- it says that however long my text is, just align the borders as such
+
+- match_parent: -it takes up the whole
+
+- android:text="hey! it's me Aninda, Welcome to my palace of straight love"
+
+- android:id="@+id/textView"
+
+#### button
+
+- same as above
+
+
+
+
+
+
