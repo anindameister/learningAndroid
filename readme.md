@@ -730,6 +730,18 @@ public class MainActivity extends AppCompatActivity {
 
 - same as above
 
+![basic view](https://github.com/anindameister/learningAndroid/blob/master/MyApplication/snaps/21.PNG)
+
+### drawable
+
+- we can keep audio, icon, photo, music etc
+- name convention needs to be kept in mind, like it starts with lowercase and not uppercase
+- at first chose 22.png, the option didn't come up; so make sure that the image comes up.
+- 'H' is not a valid file-based resource name character: 
+- File-based resource names must contain only lowercase a-z, 0-9, or underscore
+- the name was myHCLpic.PNG, so basically no error should exist
+
+
 
 
 

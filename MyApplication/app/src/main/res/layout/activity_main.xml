@@ -5,24 +5,42 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/kolkata_pic">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/my_hcl_pic"
+        android:layout_marginTop="0.4in"
+        android:layout_marginRight="0.1in"
+        android:layout_marginLeft="1.5in"
+>
+
+    </ImageView>
+
+
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hey! Welcome to Aninda Maestro's"
-        android:text="palace of straight love"
+        android:text="hey! Welcome to Aninda Maulik's Resume"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
         android:layout_marginLeft="0.5in"
-        android:layout_marginRight="0.5in"
-        android:layout_marginTop="2.0in"
+        android:layout_marginTop="0.5in"
         android:layout_marginBottom="0.5in"
+
          />
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginLeft="1.1in"
+        android:text="go2RESUME" />
 
 </LinearLayout>

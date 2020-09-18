@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Button to go to the next page", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Button to go to the first page of the resume", Toast.LENGTH_LONG).show();
 
                 Intent i=new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(i);
