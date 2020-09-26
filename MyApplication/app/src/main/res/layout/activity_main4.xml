@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="397dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="0.6in"
+        android:layout_marginTop="0.5in"
+        android:layout_marginBottom="0.5in"
+        android:text="Welcome to Aninda Maulik's Page for Java"
+
+        android:textSize="16dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/palindromeNumber"
+        android:layout_width="407dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="412dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="enter a number to find out if it is palindrome or not" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="532dp"
+        android:text="delete the contents of the input field after reading instructions" />
+
+    <EditText
+        android:id="@+id/palindromeString"
+        android:layout_width="401dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="307dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a word to find out if it's palindrome or not" />
+
+
+</RelativeLayout>
