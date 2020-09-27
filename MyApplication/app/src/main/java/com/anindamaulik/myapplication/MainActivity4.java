@@ -5,26 +5,43 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
 
-public class MainActivity4 extends AppCompatActivity {
+public class MainActivity4 extends AppCompatActivity implements View.OnClickListener {
+
 
     EditText myEditText;
-    EditText MyEditText2;
+    EditText myEditText2;
+    EditText myEditText3;
+    EditText myEditText5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
+        Button button4 = findViewById(R.id.button4);
+
+        button4.setOnClickListener(this);
+//
+//        Button button5 = findViewById(R.id.button5);
+//
+//        button5.setOnClickListener(this);
+
+        myEditText3 = findViewById(R.id.armstrongNumber);
+
+        myEditText2 = findViewById(R.id.palindromeString);
+
         myEditText = findViewById(R.id.palindromeNumber);
 
         myEditText.setOnClickListener(new View.OnClickListener() {
-            //            https://stackoverflow.com/questions/34665564/how-to-retrieve-user-input-in-android
+
             @Override
             public void onClick(View view) {
                 String input = myEditText.getText().toString();
@@ -66,7 +83,141 @@ public class MainActivity4 extends AppCompatActivity {
 
             }
         });
+        myEditText2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String input2 = myEditText2.getText().toString();
+
+                ArrayList<String> userInput2string2list = new ArrayList<String>();
+                ArrayList<String> userInput2string2list2 = new ArrayList<String>();
+                for (String retval : input2.split("")) {
+
+
+                    userInput2string2list.add(retval);
+
+                }
+                for (int j = userInput2string2list.size() - 1; j >= 0; j--) {
+                    userInput2string2list2.add(userInput2string2list.get(j));
+
+
+                }
+                StringBuffer sb = new StringBuffer();
+
+                for (String s : userInput2string2list2) {
+                    sb.append(s);
+                }
+                String str = sb.toString();
+
+
+                if (input2.contentEquals(str) == true) {
+                    Toast.makeText(getApplicationContext(), "input palindrome", Toast.LENGTH_LONG).show();
+
+                } else {
+                    Toast.makeText(getApplicationContext(), "input NOT palindrome", Toast.LENGTH_LONG).show();
+                }
+            }
+
+
+        });
+
+        myEditText3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String input3 = myEditText3.getText().toString();
+
+                ArrayList<String> userInput2string2list = new ArrayList<String>();
+                for (String retval : input3.split("")) {
+
+                    int retvalInted = Integer.parseInt(retval);
+                    int cubeddRetvalInted = retvalInted * retvalInted * retvalInted;
+                    String stringedCubeddRetvalInted = Integer.toString(cubeddRetvalInted);
+
+
+                    userInput2string2list.add(stringedCubeddRetvalInted);
+
+                }
+                int lengthUserInput = userInput2string2list.size();
+
+                ArrayList<Integer> userInput2string2listInteger = new ArrayList<Integer>();
+                int i;
+                for (i = 0; i < lengthUserInput; i++) {
+                    userInput2string2listInteger.add(Integer.parseInt(userInput2string2list.get(i)));
+
+
+                }
+                int sum = 0;
+                for (int j = 0; j < userInput2string2listInteger.size(); j++) {
+                    sum += userInput2string2listInteger.get(j);
+                }
+
+                int intedInput3 = Integer.parseInt(input3);
+                if (intedInput3 == sum) {
+
+
+                    Toast.makeText(getApplicationContext(), "congrats, you have chosen an armstrong number", Toast.LENGTH_LONG).show();
+
+                } else {
+
+                    Toast.makeText(getApplicationContext(), "you have chosen a NON-armstrong number", Toast.LENGTH_LONG).show();
+
+                }
+
+
+            }
+
+
+        });
+
 
     }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.button4:
+
+                Toast.makeText(getApplicationContext(), "click2viewFibonacci", Toast.LENGTH_LONG).show();
+
+                Intent i = new Intent(MainActivity4.this, MainActivity5.class);
+                startActivity(i);
+
+
+        }
+//        switch (view.getId()) {
+//            case R.id.button5:
+//
+////                EditText myEditText5=(EditText) findViewById(R.id.myEditText5);
+//                String euros= myEditText5.getText().toString();
+//
+//                Double doubleEuros= Double.parseDouble(euros);
+//                Double doubleInr=88.27 * doubleEuros;
+//
+//                String toastText="="+String.format("%.2f", doubleInr) + "Euros";
+//                Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_SHORT).show();
+
+        Button b = (Button) findViewById(R.id.button5);
+                b.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+        String euros= myEditText5.getText().toString();
+
+                Double doubleEuros= Double.parseDouble(euros);
+                Double doubleInr=88.27 * doubleEuros;
+
+                String toastText="="+String.format("%.2f", doubleInr) + "Euros";
+                        Toast.makeText(getApplicationContext(),toastText, Toast.LENGTH_LONG).show();
+
+
+
+
+
+
+
+
+                    }
+                });
+    }
 }
+
+
 

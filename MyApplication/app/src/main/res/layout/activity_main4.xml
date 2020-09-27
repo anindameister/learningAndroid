@@ -50,15 +50,61 @@
 
     <EditText
         android:id="@+id/palindromeString"
-        android:layout_width="401dp"
-        android:layout_height="81dp"
+        android:layout_width="378dp"
+        android:layout_height="74dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="307dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="318dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter a word to find out if it's palindrome or not" />
+
+    <EditText
+        android:id="@+id/armstrongNumber"
+        android:layout_width="389dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="228dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a word to find out if it's Armstrong or not" />
+
+    <EditText
+        android:id="@+id/myEditText5"
+        android:layout_width="389dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="157dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="enter your euro amount" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0.1in"
+        android:layout_marginTop="642dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="1.6in"
+        android:text="FibonacciSeriesView" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="94dp"
+        android:text="Euro2INR" />
 
 
 </RelativeLayout>
