@@ -38,20 +38,13 @@ public class MainActivity5 extends AppCompatActivity {
 
                     Log.d("$$$$$$$$$$$$$","3333333333333333333");
 
-//                    myEdit_text4.setText(Integer.toString(num1)+"\n");
-                    StringBuffer sb = new StringBuffer();
-                    String stringedNum1 = Integer.toString(num1);
-                    ArrayList<String> stringedNum1TOlist =new ArrayList<String>();
-                    stringedNum1TOlist.add(stringedNum1);
+                    ArrayList<String> fibonaciNumbers =new ArrayList<String>();
+                    fibonaciNumbers.add(String.valueOf(num1));
+//                    https://www.thetopsites.net/article/53711115.shtml#:~:text=get(i)%20%2B%20%22*,append(get(i)).
 
+                    for(String j :fibonaciNumbers )
+                        myEdit_text4.append("\n"+j + "\n\n");
 
-
-                    for (String s : stringedNum1TOlist) {
-                        sb.append(s);
-
-                    }
-                    String str = sb.toString();
-                    myEdit_text4.setText(str);
                     Log.d("##########","2222222222222222");
                     int num3 = num1 + num2;
                     num1 = num2;

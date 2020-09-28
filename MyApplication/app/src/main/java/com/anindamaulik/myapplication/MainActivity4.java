@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -15,10 +17,17 @@ import java.util.ArrayList;
 public class MainActivity4 extends AppCompatActivity implements View.OnClickListener {
 
 
-    EditText myEditText;
-    EditText myEditText2;
+    EditText myEditText, myEditText2;
     EditText myEditText3;
     EditText myEditText5;
+
+    TextView textName;
+
+    Button button5;
+
+
+
+
 
 
     @Override
@@ -30,15 +39,24 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
 
         button4.setOnClickListener(this);
 //
-//        Button button5 = findViewById(R.id.button5);
-//
-//        button5.setOnClickListener(this);
+        button5 = findViewById(R.id.button5);
+
+        button5.setOnClickListener(this);
 
         myEditText3 = findViewById(R.id.armstrongNumber);
 
         myEditText2 = findViewById(R.id.palindromeString);
 
         myEditText = findViewById(R.id.palindromeNumber);
+
+
+
+        textName = findViewById(R.id.textName);
+
+
+
+
+        myEditText5 = findViewById(R.id.myEditText5);
 
         myEditText.setOnClickListener(new View.OnClickListener() {
 
@@ -183,41 +201,17 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
 
 
         }
-//        switch (view.getId()) {
-//            case R.id.button5:
-//
-////                EditText myEditText5=(EditText) findViewById(R.id.myEditText5);
-//                String euros= myEditText5.getText().toString();
-//
-//                Double doubleEuros= Double.parseDouble(euros);
-//                Double doubleInr=88.27 * doubleEuros;
-//
-//                String toastText="="+String.format("%.2f", doubleInr) + "Euros";
-//                Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_SHORT).show();
-
-        Button b = (Button) findViewById(R.id.button5);
-                b.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-        String euros= myEditText5.getText().toString();
-
-                Double doubleEuros= Double.parseDouble(euros);
-                Double doubleInr=88.27 * doubleEuros;
-
-                String toastText="="+String.format("%.2f", doubleInr) + "Euros";
-                        Toast.makeText(getApplicationContext(),toastText, Toast.LENGTH_LONG).show();
+        switch (view.getId()) {
+            case R.id.button5:
 
 
-
-
-
-
-
-
-                    }
-                });
+                String userInput = myEditText5.getText().toString();
+                double curr = Double.valueOf(userInput);
+                Double euro_value = (curr * 88.27);
+                String show = Double.toString(euro_value);
+                textName.setText("The euro value is:" + show);
+        }
     }
 }
-
 
 

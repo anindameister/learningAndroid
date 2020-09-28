@@ -20,33 +20,26 @@
         android:text="Welcome to Aninda Maulik's Page for Java"
 
         android:textSize="16dp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic" /><![CDATA[
+
+
+        android:text="delete the contents of the input field after reading instructions" />
+
+    ]]>
 
     <EditText
         android:id="@+id/palindromeNumber"
-        android:layout_width="407dp"
-        android:layout_height="79dp"
+        android:layout_width="375dp"
+        android:layout_height="76dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="412dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="500dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="enter a number to find out if it is palindrome or not" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="532dp"
-        android:text="delete the contents of the input field after reading instructions" />
+        android:hint="enter a number to find out if it is palindrome or not"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/palindromeString"
@@ -54,11 +47,11 @@
         android:layout_height="74dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="318dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="413dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter a word to find out if it's palindrome or not" />
+        android:hint="Enter a word to find out if it's palindrome or not" />
 
     <EditText
         android:id="@+id/armstrongNumber"
@@ -66,23 +59,24 @@
         android:layout_height="63dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginBottom="330dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter a word to find out if it's Armstrong or not" />
+        android:hint="Enter a word to find out if it's Armstrong or not" />
 
     <EditText
         android:id="@+id/myEditText5"
-        android:layout_width="389dp"
-        android:layout_height="63dp"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="157dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="254dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="enter your euro amount" />
+        android:hint="enter_your_currency"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button4"
@@ -91,20 +85,38 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="0.1in"
-        android:layout_marginTop="642dp"
-        android:layout_marginEnd="114dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="106dp"
         android:layout_marginRight="1.6in"
         android:text="FibonacciSeriesView" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="34dp"
+
+        android:layout_marginBottom="253dp"
         android:text="Euro2INR" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginBottom="178dp"
+        android:hint="resultWouldBeShownIfYouEnterValueTHENhitButton" />
 
 
 </RelativeLayout>
